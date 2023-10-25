@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details</title>
+    <link rel="stylesheet" href="styles1.css">
+    <style>
+        body {
+            background: linear-gradient(to bottom, #3494E6, #EC6EAD);
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: #FFF;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="view-more-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" id="close-modal">&times;</span>
+            <h2>Recipe 1: Quick and Easy Pasta</h2>
+            <img src="https://th.bing.com/th/id/OIP.q5b6hGTZvkVNh7O_Il-VwQHaGQ?pid=ImgDet&rs=1" alt="Pasta" height="100"
+                width="100">
+            <p>This is a delicious pasta recipe for a quick and easy weekday dinner. Enjoy!</p>
+
+            <h2>Recipe 2: Spicy Chicken Curry</h2>
+            <img src="https://th.bing.com/th/id/OIP.XV0hscv9f1Ta9tGwZlN10gHaFj?pid=ImgDet&w=1200&h=900&rs=1"
+                alt="Chicken Curry" height="100" width="100">
+            <p>This is a spicy chicken curry recipe that's perfect for a quick and flavorful weekday dinner. Enjoy!</p>
+
+            <!-- <h2>Recipe 3: Panner butter masala</h2>
+            <img src="https://th.bing.com/th/id/OIP.JtWhWL78SGuS9LS3qJoV9AHaJ4?pid=ImgDet&rs=1" alt="Paneer Curry" width="100" height="100">
+            <p>This is a Paneer butter masala recipe that's perfect for a quick and flavorful weekday dinner. Enjoy!</p> -->
+        </div>
+    </div>
+
+    <div id="t-nav">
+        <img src="supermarket.png" alt="supermarket" height="70" width="55" class="img1">
+        <h3>Super Market</h3>
+        <input type="text" class="input1" name="search bar" placeholder="Search in site">
+        <p class="ab">Cart</p>
+        <p class="ab">Categories</p>
+        <p class="ab">Home</p>
+    </div>
+    <div id="verticle">
+        <p class="two">
+            <img src="https://th.bing.com/th/id/OIP.XRIS4L8nUpUvF7ZFWtMXaAHaH_?pid=ImgDet&rs=1" class="img2" height="70"
+                width="70" alt="bakery">
+            <label class="three">Bakery</label>
+        </p><br><br>
+        <p class="two">
+            <img src="vegetable.png" class="img2" height="70" width="70" alt="veggies">
+            <label class="three">Veggies</label>
+        </p><br><br>
+        <p class="two">
+            <img src="https://w7.pngwing.com/pngs/186/157/png-transparent-meat-steak-meat-icon-s-free-food-beef-roast-beef.png"
+                class="img2" height="70" width="70" alt="meat">
+            <label class="three">Meat</label>
+        </p><br><br>
+        <p class="two">
+            <img src="diary.png" class="img2" height="70" width="70" alt="dairy">
+            <label class="three">Dairy</label>
+        </p><br><br>
+        <p class="two">
+            <img src="https://cdn3.iconfinder.com/data/icons/street-food-and-food-trucker-1/64/french-fries-snacks-fast-food-1024.png"
+                class="img2" height="70" width="70" alt="snacks">
+            <label class="three">Snacks</label>
+        </p>
+    </div>
+    <div class="past">
+        <div id="subscribe">
+            <h2>Subscribe</h2>
+            <br>
+            <input type="text" id="E-mail" placeholder="Enter your Email-id" maxlength="50" size="50">
+            <br><br>
+            <input type="button" id="Subscribe" class="button" value="subscribe">
+        </div>
+        <div id="unsubscribe">
+            <h2>Recipes</h2>
+            <br>
+            <input type="text" id="E-mail" placeholder="Discover new Recipes" maxlength="50" size="50">
+            <br><br>
+            <input type="button" id="view-more-button" class="button" value="View More">
+        </div>
+
+    </div>
+    <div class="img5">
+        <div class="past2">
+            <img src="https://th.bing.com/th/id/OIP.q5b6hGTZvkVNh7O_Il-VwQHaGQ?pid=ImgDet&rs=1" height="90" width="90"
+                class="img4">
+            <img src="htt  ps://th.bing.com/th/id/OIP.q5b6hGTZvkVNh7O_Il-VwQHaGQ?pid=ImgDet&rs=1" height="90" width="90"
+                class="img6">
+        </div>
+        <div class="past1">
+            <br><br>
+            <h2>Quick and Easy pasta</h2>
+            <br>
+            <p class="light"><i>Italian Cuisine</i></p>
+            <br>
+            <p class="f">
+                Try our delicious pasta recipe for a quick and easy
+                <br>
+                weekday dinner
+            </p>
+            <br>
+            <input type="button" value="Vegetarian" class="button">
+            <br><br><br><br><br><br><br>
+            <h2>Spicy Chicken Curry</h2>
+            <br>
+            <p class="light">Indian Cuisine</p>
+            <br>
+            <p class="f">
+                Try our delicious Chicken recipe for a quick and easy
+                <br>
+                weekday dinner
+            </p>
+            <br>
+            <input type="button" value="Non-Vegetarian" class="button">
+        </div>
+    </div>
+    <div class="user">
+        <h4>Logged-In User Details</h4>
+        <div class="circle"></div>
+        <div class="wow">
+            <a><strong>First Name: </strong></a>
+            <span id="first-name-display">**********</span>
+            <br><br><br>
+            <a><strong>Last Name: </strong></a>
+            <span id="last-name-display">**********</span>
+            <br><br><br>
+            <a><strong>Email: </strong></a>
+            <span id="email-display">**********</span>
+            <br><br><br>
+            <a><strong>Password: </strong></a>
+            <span id="password-display">**********</span>
+        </div>
+    </div>
+    <script>
+        const userData = JSON.parse(sessionStorage.getItem("userData"));
+
+        if (userData) {
+            document.getElementById("first-name-display").textContent = userData.firstName;
+            document.getElementById("last-name-display").textContent = userData.lastName;
+            document.getElementById("email-display").textContent = userData.email;
+        }
+        else {
+            alert("User data not found. Please register or log in first.");
+            window.location.href = "page1.html";
+        }
+    </script>
+    <script>
+        const viewMoreButton = document.getElementById("view-more-button");
+        const viewMoreModal = document.getElementById("view-more-modal");
+        const closeModal = document.getElementById("close-modal");
+
+        viewMoreButton.addEventListener("click", function () {
+            viewMoreModal.style.display = "block";
+        });
+
+
+        closeModal.addEventListener("click", function () {
+            viewMoreModal.style.display = "none";
+        });
+
+
+        window.addEventListener("click", function (event) {
+            if (event.target == viewMoreModal) {
+                viewMoreModal.style.display = "none";
+            }
+        });
+    </script>
+
+</body>
+
+</html>

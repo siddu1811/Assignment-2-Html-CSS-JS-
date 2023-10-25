@@ -1,0 +1,74 @@
+body{
+    background-color: rgb(255, 255, 255);
+    background: linear-gradient(to bottom, #3494E6, #EC6EAD);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF;
+}
+#div1
+{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    background: linear-gradient(to bottom, #3494E6, #EC6EAD);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #FFF;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+h1,p,.login{
+    text-align: center;
+    color: #FFF;
+}
+
+.but{
+    background-color: rgb(177, 173, 176);
+    color: rgb(7, 7, 7);
+}
+#reg
+{
+    width: auto;
+    height: 500px;
+    text-align: center;
+    display:none;
+   
+}
+#reg1
+{
+    width: auto;
+    height: 500px;
+    text-align: center;
+    display:none;
+    
+
+}
+.butto
+{
+    padding: 0.15%;
+   
+}
+.one
+{
+    margin-right: 320px;
+}
+.two
+{
+    margin-right: 350px;
+}
+.three
+{
+    margin-right: 260px;
+}
+.bb
+{
+    background-color: black;
+    color: aliceblue;
+    font-size: 20px;
+}
+.but:hover
+{
+    background-color: rgb(0, 0, 0);
+    color:aliceblue;
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="div1">
+        <h1>Welcome to Super Market</h1>
+        <p>Sign in or create an account to start shopping</p>
+        <div class="login">
+            <input type="text" id="email" placeholder="E-mail">
+        </div>
+        <br>
+        <div class="login">
+            <input type="password" id="password" placeholder="Password">
+        </div>
+        <br>
+        <div class="bot">
+            <input class="but" type="button" onclick="myFunction()" value="Register">
+            <input class="but" onclick="myFunction1()" type="button" value="SignIn">
+        </div>
+    </div>
+    <br>
+    <div id="reg" style="display: none;">
+        <h1>Register</h1>
+        <label class="one">
+            <strong>First Name</strong>
+        </label>
+        <br>
+        <br>
+        <input type="text" class="butto" id="first-name" placeholder="Enter your first name" maxlength="50" size="50">
+        <br>
+        <br>
+        <label class="one">
+            <strong>Last Name</strong>
+        </label>
+        <br>
+        <br>
+        <input type="text" class="butto" id="last-name" placeholder="Enter your last name" maxlength="50" size="50">
+        <br>
+        <br>
+        <label class="two">
+            <strong>Email</strong>
+        </label>
+        <br>
+        <br>
+        <input type="text" class="butto" id="reg-email" placeholder="Enter your Email-id" maxlength="50" size="50">
+        <br>
+        <br>
+        <label class="one">
+            <strong>Password</strong>
+        </label>
+        <br>
+        <br>
+        <input type="password" class="butto" id="reg-password" placeholder="Enter Password" maxlength="50" size="50">
+        <br>
+        <br>
+        <input class="but" type="button" onclick="registerUser()" value="Register">
+    </div>
+    <div id="reg1" style="display: none;">
+        <h1>Login</h1>
+        <label class="two">
+            <strong>Email</strong>
+        </label>
+        <br>
+        <br>
+        <input type="text" class="butto" id="login-email" placeholder="Enter your Email-id" maxlength="50" size="50">
+        <br>
+        <br>
+        <label class="one">
+            <strong>Password</strong>
+        </label>
+        <br>
+        <br>
+        <input type="password" class="butto" id="login-password" placeholder="Enter Password" maxlength="50" size="50">
+        <br>
+        <br>
+        <input class="but" onclick="loginUser()" type="button" value="Login and View Details">
+    </div>
+    <script>
+        function myFunction() {
+            document.getElementById("reg").style.display = "block";
+            document.getElementById("reg1").style.display = "none";
+        }
+
+        function myFunction1() {
+            document.getElementById("reg1").style.display = "block";
+            document.getElementById("reg").style.display = "none";
+        }
+
+        function registerUser() {
+            const firstName = document.getElementById("first-name").value;
+            const lastName = document.getElementById("last-name").value;
+            const email = document.getElementById("reg-email").value;
+            const password = document.getElementById("reg-password").value;
+
+            const user = {
+                firstName,
+                lastName,
+                email,
+                password,
+            };
+
+            sessionStorage.setItem("userData", JSON.stringify(user));
+            myFunction1();
+        }
+
+        function loginUser() {
+            const email = document.getElementById("login-email").value;
+            const password = document.getElementById("login-password").value;
+            const userData = JSON.parse(sessionStorage.getItem("userData"));
+
+            if (userData && userData.email === email && userData.password === password) {
+                alert("Login successful!");
+                window.location.href = "http://127.0.0.1:5500/index3.html";
+            }
+            else {
+                alert("Login failed. Please check your credentials.");
+            }
+        }
+
+    </script>
+</body>
+
+</html>
